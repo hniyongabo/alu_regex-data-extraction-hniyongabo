@@ -9,7 +9,7 @@ credit_card_pattern = r'\b(?:\d{4}[- ]?){3}\d{4}\b'
 html_tags = r'<[^>]+>'
 hashtags = r'#\w+'
 
-
+# Read the file content
 emails = re.findall(email_pattern, X)
 urls = re.findall (url_pattern, X)
 phones = re.findall(phone_pattern, X)
@@ -17,10 +17,11 @@ credit_cards = re.findall(credit_card_pattern, X)
 html_tags = re.findall(html_tags, X)
 hashtags = re.findall(hashtags, X)
 
-
+# Print the results
 print("Emails:\n", emails)
 print("URLs:\n ", urls)
 print("Phone numbers:\n ", phones)
 print("Credit Card numbers:\n ", credit_cards)
 print("HTML Tags:\n ", html_tags)
 print("Hashtags:\n ", hashtags)
+
